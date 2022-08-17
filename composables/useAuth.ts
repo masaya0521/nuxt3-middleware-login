@@ -3,7 +3,7 @@ import { Ref } from "vue";
 const login = (currentUser: Ref<boolean>) => async () => {
   currentUser.value = true;
 
-  const to = useRoute().redirectedFrom?.path || "/";
+  const to = useRoute().redirectedFrom?.path || "/mypage";
   useRouter().push(to);
 };
 
